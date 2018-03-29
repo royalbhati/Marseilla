@@ -9,8 +9,8 @@ def reddit():
 	os.system('mpg321 reddit.mp3')
 	browse=webdriver.Chrome()
 	browse.get('https://www.reddit.com/')
-	username='tj_kashyap'
-	password='rnexus@123'
+	username=''
+	password=''
 	browse.find_element_by_xpath('id("login_login-main")/input[2]').clear()
 	browse.find_element_by_xpath('id("login_login-main")/input[2]').send_keys(username)
 	browse.find_element_by_xpath('id("login_login-main")/input[3]').clear()
